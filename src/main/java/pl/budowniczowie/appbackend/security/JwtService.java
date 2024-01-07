@@ -41,7 +41,6 @@ public class JwtService {
                 .withClaim("firstname", user.getFirstname())
                 .withClaim("lastname", user.getLastname())
                 .withClaim("email", user.getEmail())
-                .withClaim("avatar", user.getPathAvatar())
                 .withIssuedAt(new Date(System.currentTimeMillis()))
                 .withExpiresAt(new Date(System.currentTimeMillis() + jwtExpiration))
                 .withClaim("roles", user.getAuthorities().stream().map(GrantedAuthority::getAuthority).collect(Collectors.toList()))

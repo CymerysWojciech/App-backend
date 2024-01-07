@@ -11,5 +11,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class AuthRes {
     private String token;
+    private  UserRes user;
 
 }

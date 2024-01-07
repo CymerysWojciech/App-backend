@@ -8,6 +8,8 @@ import lombok.NoArgsConstructor;
 import org.springframework.lang.NonNull;
 import pl.budowniczowie.appbackend.user.Role;
 
+import java.time.LocalDate;
+import java.util.Date;
 import java.util.List;
 
 @Data
@@ -25,7 +27,13 @@ public class RegisterReq {
     public String email;
     @NonNull
     public List<Role> role;
-    private String pathAvatar;
+    private LocalDate birthDate;
+    private String town;
+    private String postOffice;
+    private String zipCode;
+    private String street;
+    private String houseNumber;
+    private String phoneNumber;
 
 
 }

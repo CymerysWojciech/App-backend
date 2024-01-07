@@ -4,7 +4,22 @@ spring:
     username: root
     password: haslo
     driver-class-name: com.mysql.cj.jdbc.Driver
-
+  servlet:
+    multipart:
+      max-file-size: 1MB
+      max-request-size: 1MB
+      enabled: false
+  mail:
+    host: smtp-mail.outlook.com
+    username: carparterapp@outlook.com
+    password: Alamakota1974
+    port: 587
+    properties:
+      smtp:
+        auth: true
+        starttls:
+          enable: true
+          required: true
   jpa:
     hibernate:
       ddl-auto: create-drop
